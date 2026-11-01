@@ -32,7 +32,7 @@ USER_CONFIG = {
     "ENABLE_ARP_FALLBACK": True,
     "ENABLE_NMAP_FALLBACK": True,
     "SPEEDPORT_COMMAND": "",
-    "BIND_HOST": "0.0.0.0",
+    "BIND_HOST": "::",
     "BIND_PORT": 5151,
 }
 

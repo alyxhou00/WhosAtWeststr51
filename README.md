@@ -61,7 +61,7 @@ Notes:
 - `ENABLE_ARP_FALLBACK`: Keeps `arp -a` as a passive local fallback after the Speedport check.
 - `ENABLE_NMAP_FALLBACK`: Off by default because it is the slowest and most active fallback, scanning the configured local subnet.
 - `SPEEDPORT_COMMAND`: Optional explicit path to the `speedport` executable. Leave it empty to prefer a repo-local `.venv` executable if present, then fall back to `speedport`.
-- `BIND_HOST`: Defaults to `127.0.0.1` for local-only use. Change to `0.0.0.0` only if you want to access it from other devices on your LAN.
+- `BIND_HOST`: Defaults to `127.0.0.1` for local-only use. Change to `0.0.0.0` only if you want to access it from other devices on your LAN, or `::` to also accept IPv6 (on Linux this listens on both IPv4 and IPv6, so `<hostname>.local` works even when it resolves to an IPv6 address).
 
 ## Setup on Raspberry Pi / Linux
 
